@@ -7,7 +7,7 @@ const Tags = () => {
             <div className="w-full flex flex-row gap-3 flex-wrap md:flex-col">
                 {
                     tagList?.map((item, index) => (
-                        <span key={index} className="text-sm cursor-pointer">{item}</span>
+                        <span key={index} className="text-sm cursor-pointer text-nowrap">{item}</span>
                     ))
                 }
             </div>

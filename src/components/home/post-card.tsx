@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { IPost } from '@/types/post';
-import { clipSentence } from '@/utils/helpers';
+import { clipSentence, returnCapitalize } from '@/utils/helpers';
 
 interface IPostCardProps {
     post: IPost
@@ -17,7 +17,7 @@ const PostCard = ({post, img}: IPostCardProps) => {
             </div>
             <div className="w-2/3">
                 <h5>Featured Article</h5>
-                <h2>{title}</h2>
+                <h2>{returnCapitalize(title!)}</h2>
                 <small className="flex my-2 items-center gap-1">
                 <span className="text-sm sm:text-normal">Ralph Hawkins</span>
                 <svg width="3" height="3" viewBox="0 0 3 3" fill="none" xmlns="http://www.w3.org/2000/svg">

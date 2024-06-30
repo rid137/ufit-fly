@@ -1,4 +1,5 @@
 import { IPost } from "@/types/post"
+import { returnCapitalize } from "@/utils/helpers"
 
 interface IHeroProps {
     post: IPost | undefined
@@ -32,7 +33,7 @@ const Hero = ({post, isLoading, isError}: IHeroProps) => {
                     :
                     <>
                         <h5>Featured Article</h5>
-                        <h2>{post?.title}</h2>
+                        <h2>{returnCapitalize(post?.title!)}</h2>
                         <small className="flex mb-1 items-center gap-1">
                             <span>Ralph Hawkins</span>
                             <svg width="3" height="3" viewBox="0 0 3 3" fill="none" xmlns="http://www.w3.org/2000/svg">
