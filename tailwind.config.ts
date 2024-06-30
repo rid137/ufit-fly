@@ -8,13 +8,26 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontSize: {
+        xs: "0.566rem",
+        sm: '0.7924rem',
+        normal: '0.9056rem',
+        md: '1.132rem',
+        lg: '1.3584rem',
+        xl: '1.5848rem',
+        xxl: '1.8112rem',
+        xxxl: '2.0376rem'
       },
+        colors: {
+          primary: "#1C1C1C",
+        },
+        fontFamily: {
+          sans: ["Open Sans", "sans-serif"],
+          libre: ["Libre Baskerville", "serif"],
+        },
     },
   },
   plugins: [],
 };
 export default config;
+
